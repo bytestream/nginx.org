@@ -60,7 +60,7 @@ the <header>Upgrade</header> field in the client request header:
 <programlisting>
 http {
     map $http_upgrade $connection_upgrade {
-        default upgrade;
+        default Upgrade;
         ''      close;
     }
 
